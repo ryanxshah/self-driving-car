@@ -1,4 +1,4 @@
-# Autonomous Car Deep Learning Project
+# Autonomous Car Computer Vision Project
 
 In this project, I trained a virtual car to drive around various tracks. I created three different models: A transformer planner, based on the Perceiver architecture, a convolutional neural network planner, and a multilayer perceptron planner.
 
