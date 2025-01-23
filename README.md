@@ -2,6 +2,12 @@
 
 In this project, I trained a virtual car to drive around various tracks. I created three different models: A transformer planner, based on the Perceiver architecture, a convolutional neural network planner, and a multilayer perceptron planner.
 
+* Designed a transformer planner based on the Perceiver architecture to train a virtual car to drive around various tracks. Also designed a convolutional neural network planner and a multilayer perceptron planner to compare performance.
+* Developed a road detection system by combining a depth estimation algorithm with an implementation of semantic segmentation.
+* Implemented a custom training pipeline using PyTorch and fine-tuned hyperparameters to improve model accuracy and training efficiency.
+* Achieved 90% track coverage and 100% track completion rate with the most optimal model.
+
+
 
 ## Watch the car drive!
 
