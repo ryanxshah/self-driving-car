@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-HOMEWORK_DIR = Path(__file__).resolve().parent
+DIR = Path(__file__).resolve().parent
 INPUT_MEAN = [0.2788, 0.2657, 0.2629]
 INPUT_STD = [0.2064, 0.1944, 0.2252]
 
@@ -209,7 +209,7 @@ def load_model(
     m = MODEL_FACTORY[model_name](**model_kwargs)
 
     if with_weights:
-        model_path = HOMEWORK_DIR / f"{model_name}.th"
+        model_path = DIR / f"{model_name}.th"
         assert model_path.exists(), f"{model_path.name} not found"
 
         try:
@@ -241,7 +241,7 @@ def save_model(model: torch.nn.Module) -> str:
     if model_name is None:
         raise ValueError(f"Model type '{str(type(model))}' not supported")
 
-    output_path = HOMEWORK_DIR / f"{model_name}.th"
+    output_path = DIR / f"{model_name}.th"
     torch.save(model.state_dict(), output_path)
 
     return output_path
